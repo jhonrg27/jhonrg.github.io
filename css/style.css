@@ -5,7 +5,8 @@ html {
     -moz-osx-font-smoothing: grayscale;
     overflow-y: auto;
     overflow-x: hidden;
-    font-family: 'Lato', sans-serif;
+    /*font-family: 'Lato', sans-serif;*/
+    font-family: sans-serif, Helvetica, Arial;
     color: #6f6f6f;
 }
 ::-webkit-scrollbar { width: 2px;  }/* for vertical scrollbars */
@@ -318,7 +319,7 @@ a.goto-btn { margin-right: 30px ; border: #fff 1px solid; padding: 12px 18px; co
     /* margin-left: 10px; */
 }
 /* service lists */
-.service { margin-bottom: 20px }
+.service { margin: 0 10px 20px 10px }
 .service .media-right i.fa {
     text-align: center;
     font-size: 30px;
@@ -347,16 +348,23 @@ a.goto-btn { margin-right: 30px ; border: #fff 1px solid; padding: 12px 18px; co
     height: 80px;
     transition: background-color 0.5s;
 }
-.experience:hover i.fa,
-.service:hover i.fa { background-color: #333333 }
+/*.experience:hover i.fa,
+.service:hover i.fa { background-color: #333333 }*/
+.service .media-body ul li,
+.service .media-body p {
+    font-size: 16px;
+}
 h4.media-heading {
     margin-top: 0;
     margin-bottom: 5px;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 400;
     text-transform: uppercase;
     color: #333;
     line-height: 20px;
+}
+h4.media-heading i {
+    padding-right: 10px;
 }
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #FFF;
@@ -382,9 +390,9 @@ h4.media-heading {
 
 	}
 #about p {
-    font-size: 18px;
+    font-size: 20px;
     line-height:36px;
-    font-weight:300;
+    /*font-weight:300;*/
     margin-bottom: 8px;
 }
 
@@ -404,7 +412,7 @@ h4.media-heading {
 
 
 
-#about { padding: 40px 0 }
+#about { padding: 60px 0 40px 0}
 .gray-bg {}
 .img-wrap .profile-img {
     position: relative;
@@ -570,6 +578,29 @@ ul.social li a.fa:hover { background-color: #333333 }
     margin: 5px;
     background: #bababa;
 }
+
+#itemsWork .box {
+    padding: 10px;
+}
+
+.Inparagraph {
+    padding: 6px 20px;
+    text-align: left;
+    background: #007fbd;
+    color: white;    
+}
+
+.boxTitle {
+    font-size: 22px;
+    color: white;
+    background: #003e5d;
+    padding: 12px 0;
+}
+
+.Inparagraph p {
+    text-align: justify;
+}
+
 /* Why Us or Features Section */
 #features,
 #feature { padding: 60px 0 }
@@ -707,6 +738,7 @@ ul.cat li a.active {
     transform: translateX(0%)  translateY(0%);
     opacity: 1;
 }
+
 #itemsWorkTwo .box .hover-text i.fa {
     font-size: 20px;
     background: transparent;
